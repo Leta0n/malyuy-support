@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Malyuy! — Support</title>
+<meta name="description" content="Support and FAQ for Malyuy!, a drawing app for kids.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --petal-pink: #FF8FAB;
+    --leaf-green: #6FCF97;
+    --sun-yellow: #FFD166;
+    --sky-blue: #6FB1E8;
+    --violet: #B08BEE;
+    --ink: #3A3358;
+    --paper: #FFFBF3;
+    --card: #FFFFFF;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    color: var(--ink);
+    background: var(--paper);
+    background-image:
+      radial-gradient(circle at 8% 12%, rgba(255,143,171,0.18) 0, transparent 40%),
+      radial-gradient(circle at 92% 18%, rgba(111,177,232,0.18) 0, transparent 42%),
+      radial-gradient(circle at 15% 85%, rgba(111,207,151,0.18) 0, transparent 40%),
+      radial-gradient(circle at 88% 88%, rgba(255,209,102,0.20) 0, transparent 42%);
+    line-height: 1.6;
+  }
+
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .logo-blob {
+    width: 92px;
+    height: 92px;
+    margin: 0 auto 18px;
+    border-radius: 42% 58% 63% 37% / 46% 40% 60% 54%;
+    background: linear-gradient(135deg, var(--petal-pink), var(--sun-yellow));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 42px;
+    box-shadow: 0 12px 24px -8px rgba(255,143,171,0.55);
+  }
+
+  h1 {
+    font-family: 'Baloo 2', cursive;
+    font-size: 2.6rem;
+    margin: 0 0 8px;
+    color: var(--ink);
+  }
+
+  .tagline {
+    font-size: 1.1rem;
+    color: #6b6285;
+    margin: 0;
+  }
+
+  .card {
+    background: var(--card);
+    border-radius: 28px;
+    padding: 28px 30px;
+    margin-bottom: 24px;
+    box-shadow: 0 10px 30px -14px rgba(58,51,88,0.15);
+    border: 2px solid rgba(176,139,238,0.10);
+  }
+
+  .card h2 {
+    font-family: 'Baloo 2', cursive;
+    font-size: 1.4rem;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    flex-shrink: 0;
+  }
+
+  .dot.pink { background: var(--petal-pink); }
+  .dot.green { background: var(--leaf-green); }
+  .dot.blue { background: var(--sky-blue); }
+  .dot.yellow { background: var(--sun-yellow); }
+  .dot.violet { background: var(--violet); }
+
+  details {
+    border-bottom: 1px solid #f0ecf9;
+    padding: 14px 0;
+  }
+  details:last-child { border-bottom: none; }
+
+  summary {
+    font-weight: 700;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  summary::-webkit-details-marker { display: none; }
+
+  summary::after {
+    content: '+';
+    font-size: 1.4rem;
+    color: var(--violet);
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
+  }
+
+  details[open] summary::after {
+    transform: rotate(45deg);
+  }
+
+  details p {
+    margin: 10px 0 0;
+    color: #5a5273;
+  }
+
+  .contact-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(135deg, var(--leaf-green), var(--sky-blue));
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 14px 26px;
+    border-radius: 999px;
+    font-size: 1.05rem;
+    box-shadow: 0 10px 24px -8px rgba(111,177,232,0.55);
+  }
+
+  .contact-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+    margin-top: 6px;
+  }
+
+  .response-note {
+    color: #6b6285;
+    font-size: 0.95rem;
+    margin-top: 14px;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #9891ab;
+    font-size: 0.9rem;
+  }
+
+  footer a { color: #9891ab; }
+
+  @media (max-width: 480px) {
+    h1 { font-size: 2.1rem; }
+    .card { padding: 22px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="logo-blob">🖍️</div>
+    <h1>Malyuy!</h1>
+    <p class="tagline">Support &amp; Help Center</p>
+  </header>
+
+  <div class="card">
+    <h2><span class="dot pink"></span>About Malyuy!</h2>
+    <p>Malyuy! is a simple, joyful drawing app made for kids and their creative minds — big colorful brushes, no clutter, made for little hands. We're a small team and we read every message that comes in.</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="dot green"></span>Frequently Asked Questions</h2>
+
+    <details open>
+      <summary>How do I save or share my drawing?</summary>
+      <p>Tap the save icon in the top toolbar to save your artwork to your device's Photos, or use the share icon to send it directly to family and friends.</p>
+    </details>
+
+    <details>
+      <summary>My drawing disappeared — can I get it back?</summary>
+      <p>Malyuy! keeps your most recent drawings in the Gallery inside the app. If something looks missing, check the Gallery first. If it's still not there, email us below and we'll help you look into it.</p>
+    </details>
+
+    <details>
+      <summary>How do I restore a purchase I already made?</summary>
+      <p>Tap the lock icon in the top-right corner of the home screen, then choose "Restore Purchases." This uses your Apple ID to restore anything you've already bought, at no extra cost.</p>
+    </details>
+
+    <details>
+      <summary>Is Malyuy! safe for kids? Does it collect personal data?</summary>
+      <p>Malyuy! is designed to be kid-safe: no ads targeting children, no chat, no external links inside the drawing experience. For full details, see our Privacy Policy.</p>
+    </details>
+
+    <details>
+      <summary>How do I delete my data or account?</summary>
+      <p>Email us at the address below with your request and we'll take care of it promptly.</p>
+    </details>
+  </div>
+
+  <div class="card">
+    <h2><span class="dot blue"></span>Still need help?</h2>
+    <p>Send us a message and we'll get back to you as soon as we can.</p>
+    <div class="contact-row">
+      <a class="contact-btn" href="mailto:support@malyuy.app">✉️ Email support@malyuy.app</a>
+    </div>
+    <p class="response-note">We typically reply within 1–2 business days.</p>
+  </div>
+
+  <footer>
+    <p>Malyuy! &middot; Made with 🌿 for little artists<br>
+    <a href="mailto:support@malyuy.app">support@malyuy.app</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
